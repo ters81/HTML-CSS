@@ -52,13 +52,30 @@ body{
 .wrapper{
 	min-height: 100%;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 
 /*-------------------------------------------------------------------------------------*/
 
 ._container{
 	max-width: 1046px;
+	padding: 0 15px;
 	margin: 0 auto;
+	box-sizing: content-box;
+}
+
+._ibg{
+	position: relative;
+}
+
+._ibg img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
 }
 
 /*-------------------------------------------------------------------------------------*/
@@ -73,7 +90,13 @@ body{
 .header__container {
 	display: flex;
 	min-height: 104px;
-	align-items: center;
+	align-items: center;	
+}
+
+@media (max-width: 479px){
+	.header__container {		
+		min-height: 70px;			
+	}
 }
 
 .header__logo {		
@@ -81,17 +104,39 @@ body{
 	font-style: normal;
 	font-weight: 700;
 	line-height: 32px;
-	letter-spacing: 0.10000000149011612px;
+	letter-spacing: 0.1px;
 	text-align: left;	
 	color: inherit;
 }
 .header__menu {
 	margin-left: 132px;
 }
-.menu {}
+
+@media (max-width: 992px){
+	.header__menu {
+		margin-left: 80px;
+	}
+}
+
+@media (max-width: 767px){
+	.header__menu {
+		margin-left: 40px;
+	}
+}
+
+@media (max-width: 479px){
+	.header__menu {
+		margin-left: 20px;
+	}
+}
+
+.menu {
+	padding: 5px 0;
+}
 
 .menu_list {
 	display: flex;
+	flex-wrap: wrap;
 }
 .menu__item {}
 
@@ -103,7 +148,70 @@ body{
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 171%;
-	letter-spacing: 0.20000000298023224px;
+	letter-spacing: 0.2px;
 	text-align: center;
 	color: #737373;
+}
+
+
+@media (max-width: 479px){
+	.menu__link {
+		font-size: 18px;		
+	}
+	
+}
+
+
+
+/*-------------------------------------------------------------------------------------*/
+
+.page {
+	flex: 1 1 auto;
+}
+
+.page__mainblock {}
+.mainblock {
+	position: relative;
+}
+.mainblock__container {}
+._container {}
+.mainblock__body {
+	padding:184px 0 191px 0;
+	position: relative;
+	z-index: 2;
+	max-width: 509px;
+}
+
+.mainblock__body > *:not(:last-child){
+	margin-bottom: 35px;
+}
+
+.mainblock__title {
+	font-weight: 800;
+	font-size: 58px;
+	line-height: 138%;
+	letter-spacing: 0.2px;
+}
+.mainblock__text {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 150%;
+	letter-spacing: 0.2px;
+	color: #737373;
+}
+.mainblock__buttons {}
+.mainblock__button {}
+.mainblock__button_border {}
+.mainblock__image{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+.footer {
+	
 }

@@ -138,6 +138,7 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 }
+
 .menu__item {}
 
 .menu__item:not(:last-child){
@@ -163,13 +164,18 @@ body{
 
 
 
-/*-------------------------------------------------------------------------------------*/
+/*--PAGE-------------------------------------------------------------------------------*/
 
 .page {
 	flex: 1 1 auto;
 }
 
 .page__mainblock {}
+
+
+.page__services {}
+
+/*----MAIN-BLOCK---------------------------------------------------------------------*/
 
 .mainblock {
 	position: relative;
@@ -279,7 +285,28 @@ body{
 @media (max-width: 992px){
 	.mainblock__image {
 		opacity: 0.5;
+	}
 }
+/*-------------------------------------------------------------------------------------*/
+
+
+.services {}
+.services__container {}
+.services__body {
+	display: flex;
+	margin: 0 -15px;
+}
+
+.services__column {
+	padding: 0 15px;
+	flex: 0 1 33.333%;
+}
+.services__item {}
+.item-service {}
+.item-service__icon {}
+.item-service__title {}
+.item-service__text {}
+
 
 /*-------------------------------------------------------------------------------------*/
 

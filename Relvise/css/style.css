@@ -45,6 +45,7 @@ body{
 	font-weight: 500;
 	font-family: Montserrat;
 	font-size: 14px;
+	background: #FAFAFA;
 }
 
 /*-------------------------------------------------------------------------------------*/
@@ -78,7 +79,7 @@ body{
 	object-fit: cover;
 }
 
-/*-------------------------------------------------------------------------------------*/
+/*-----HEADER-------------------------------------------------------------------*/
 
 .header {
 	position: absolute;
@@ -164,6 +165,9 @@ body{
 
 
 
+
+
+
 /*--PAGE-------------------------------------------------------------------------------*/
 
 .page {
@@ -178,6 +182,55 @@ body{
 	z-index: 2;
 	margin-top: -111px;
 }
+
+.page__advantages {
+
+}
+
+
+
+
+
+
+/*----HEADER-BLOCK---------------------------------------------------------------------*/
+
+.header-block {
+	text-align: center;	
+}
+.header-block__title {
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 142%;
+	letter-spacing: 0.2px;
+	color: #252B42;	
+}
+
+.header-block__title:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.header-block__subtitle {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 143%;	
+	letter-spacing: 0.2px;
+	color: #737373;
+}
+
+@media (max-width: 992px){
+	.header-block__title {		
+		font-size: 35px;		
+	}
+}
+
+@media (max-width: 767px){
+	.header-block__title {		
+		font-size: 30px;		
+	}
+}
+
+
+
 
 /*----MAIN-BLOCK---------------------------------------------------------------------*/
 
@@ -200,6 +253,12 @@ body{
 	}
 }
 
+@media (max-width: 479px){
+	.mainblock__body{
+		padding:115px 0 160px 0;
+	}
+}
+
 .mainblock__body > *:not(:last-child){
 	margin-bottom: 35px;
 }
@@ -213,7 +272,7 @@ body{
 
 @media (max-width: 479px){
 	.mainblock__title {
-		font-size: 42px;
+		font-size: 40px;
 	}
 }
 
@@ -291,8 +350,11 @@ body{
 		opacity: 0.5;
 	}
 }
-/*-------------------------------------------------------------------------------------*/
 
+
+
+
+/*-----SERVICES---------------------------------------------------------------*/
 
 .services {}
 .services__container {}
@@ -302,13 +364,12 @@ body{
 	.services__body {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 -15px -30px;		
+		margin: 0 -15px;		
 	}
 }
 
 .services__column {	
-	flex: 0 1 33.333%;
-	margin-bottom: 30px;
+	flex: 0 1 33.333%;	
 }
 
 @media (min-width: 670px){
@@ -324,6 +385,9 @@ body{
 	.services__column:last-child{
 		flex: 1 1 100%;
 	}
+	.services__column:not(:last-child){
+		margin-bottom: 30px;
+	}	
 }
 
 .services__item {
@@ -355,7 +419,6 @@ body{
 	color: white;
 }
 
-
 .item-service__icon {}
 
 .item-service__title {
@@ -376,6 +439,102 @@ body{
 
 
 
-/*-------------------------------------------------------------------------------------*/
+
+
+/*----ADVANTAGES-----------------------------------------------------------------------*/
+
+.advantages {
+	padding: 80px 0;
+}
+
+@media (max-width: 992px){
+	.advantages {
+		padding: 50px 0;
+	}
+}
+
+@media (max-width: 767px){
+	.advantages {
+		padding: 40px 0;
+	}
+}
+
+.advantages__container {}
+
+.advantages__header {
+	margin-bottom: 50px;
+}
+
+@media (max-width: 767px){
+	.advantages__header {
+		margin-bottom: 25px;
+	}
+}
+
+.advantages__body {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px -30px;
+}
+
+.advantages__column {
+	padding: 0 15px;
+	flex: 0 1 25%;
+	margin-bottom: 30px;
+}
+
+@media (max-width: 1020px){
+	.advantages__column {
+		flex: 0 1 50%;
+	}
+}
+
+@media (max-width: 560px){
+	.advantages__column {
+		flex: 0 1 100%;
+		margin-bottom: 20px;
+	}
+}
+
+.advantages__item {
+	background-color: #FFFFFF;
+	text-align: center;
+	padding: 30px;
+	font-weight: bold;
+}
+
+.advantages__item > *:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.advantages__icon {
+	margin-bottom: 10px;
+	height: 48px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.advantages__value {
+	
+	font-size: 40px;
+	line-height: 142%;
+	letter-spacing: 0.2px;
+	color: #252B42;
+}
+
+.advantages__text {	
+	font-size: 16px;
+	line-height: 150%;	
+	letter-spacing: 0.1px;
+	color: #737373;
+}
+
+
+
+
+
+
+/*----FOOTER------------------------------------------------------------------------*/
 
 .footer {}

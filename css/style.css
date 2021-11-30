@@ -189,6 +189,7 @@ body{
 
 .page__whoweare {}
 
+.page__clients {}
 
 
 
@@ -638,6 +639,7 @@ body{
 /*----WHO WE ARE------------------------------------------------------------------------*/
 
 .whoweare {
+	background: white;
 	padding: 100px 0;
 }
 
@@ -789,6 +791,42 @@ body{
 	line-height: 171%x;
 	letter-spacing: 0.2px;
 	color: #737373;
+}
+
+
+
+/*----CLIENTS------------------------------------------------------------------------*/
+
+
+.clients {
+	background: #FAFAFA;
+	padding: 48px 0;
+}
+
+.clients__container {}
+
+.clients__items {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.clients__item {
+	padding: 10px 15px;
+	flex: 0 1 16.667%;
+	text-align: center;
+	min-width: 140px;
+}
+
+.clients__item img{
+	max-width: 100%;
+}
+
+@media (max-width: 767px){
+	.clients {		
+		padding: 30px 0;
+	}
 }
 
 

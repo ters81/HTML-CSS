@@ -189,8 +189,11 @@ body{
 
 .page__whoweare {}
 
-.page__clients {}
+.page__clients:not(:last-child) {
+	margin-bottom: 10px;
+}
 
+.page__subscribe {}
 
 
 
@@ -826,6 +829,119 @@ body{
 @media (max-width: 767px){
 	.clients {		
 		padding: 29px 0;
+	}
+}
+
+/*----SUBSCRIBE------------------------------------------------------------------------*/
+
+
+.subscribe {
+	position: relative;	
+	padding-bottom: 20px;
+}
+
+.subscribe::before {
+	content: "";
+	background: #252B42;
+	position: absolute;
+	bottom: 0;
+	height: 77px;
+	left: 0px;
+	width: 100%;	
+}
+
+.subscribe__container {}
+
+.subscribe__body {	
+	background: #17213C;
+	border-radius: 2px;	
+	align-items: center;
+	padding: 30px 50px;
+	justify-content: space-between;
+	position: relative;
+	z-index: 2;
+}
+
+@media (min-width: 1070px){
+	.subscribe__body {
+		margin: 0 30px;
+	}
+}
+
+.subscribe__title {		
+	font-weight: bold;
+	color: white;
+	font-size: 24px;
+	line-height: 133%;
+	letter-spacing: 0.1px;
+	padding-right: 10px;
+}
+
+@media (max-width: 800px){
+	.subscribe__title {
+		margin-bottom: 20px;
+	}
+	.subscribe__body {
+		margin: 0 -15px;
+		padding: 20px 15px;
+	}
+}
+
+@media (min-width: 810px){
+	.subscribe__body {
+		display: flex;
+		justify-content: space-between;
+	}
+	.subscribe__title {
+		max-width: 266px;
+	}
+}
+
+.subscribe__form {
+	flex: 0 1 50%;
+	display: flex;
+	align-items: center;	
+}
+
+.subscribe__input {
+	width: 100%;
+	flex: 1 1 auto;
+	min-height: 58px;
+	border-radius: 5px 0px 0px 5px;
+	font-size: 14px;
+	line-height: 200%;
+	letter-spacing: 0.2px;
+	color: #737373;
+	padding: 0 20px;
+	background: #F9F9F9;
+}
+
+.subscribe__input:focus {
+	color: black;
+}
+
+.subscribe__button {
+	background: #FF7B47;
+	border: 1px solid #E6E6E6;	
+	border-radius: 0px 5px 5px 0px;
+	display: flex;
+	min-height: 58px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 14px;
+	line-height: 200%;	
+	letter-spacing: 0.2px;
+	color: #FFFFFF;
+	padding: 0 22.5px;
+}
+
+@media (max-width: 810px){
+	.subscribe__button {
+		padding: 0 15px;
+	}
+	.subscribe__input {
+		padding: 0 15px;
 	}
 }
 

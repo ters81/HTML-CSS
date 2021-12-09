@@ -961,23 +961,126 @@ body{
 }
 
 .getintouch__items {
-	display: flex;
-	align-items: center;
+	margin: 0 -15px;
 }
 
-.getintouch__item {}
+@media (min-width: 992px){
+	.getintouch__items {
+		display: flex;
+		align-items: center;
+		margin: 0;
+	}
+}
+
+@media (max-width: 992px){
+	.getintouch__header {
+		margin-bottom: 50px;
+	}
+	.getintouch {
+		padding: 50px 0 50px 0;
+	}
+}
+
+@media (max-width: 767px){
+	.getintouch__header {
+		margin-bottom: 30px;
+	}
+}
+
+.getintouch__item {
+	flex: 0 1 33.333%;
+}
 
 .item-getintouch {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: white;
+	padding: 50px 15px;
+}
+
+.item-getintouch > *:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.item-getintouch_active {
+	background-color: #252B42;
+	color: #FFFFFF;
+	padding: 80px 15px;
+}
+
+@media (max-width: 992px){
+	.item-getintouch_active {
+		padding: 50px 15px;
+	}
+}
+
+.item-getintouch_active .item-getintouch__button{
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.item-getintouch_active .item-getintouch__button:hover{
+
 }
 
 .item-getintouch__icon {}
-.item-getintouch__emails {}
-.item-getintouch__label {}
-.item-getintouch__button {}
+
+.item-getintouch__emails {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.item-getintouch__email{	
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 171%;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: inherit;
+}
+
+.item-getintouch__email:hover{
+	text-decoration: underline;
+}
+
+.item-getintouch__label {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	letter-spacing: 0.1px;
+	color: inherit;
+}
+
+.item-getintouch__button {
+	border: 1px solid #FF7B47;	
+	border-radius: 5px;
+	min-height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 171%;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: #FF7B47;
+	padding: 5px 20px;
+	transition: all 0.3s ease 0s;
+}
+
+.item-getintouch__button:hover{
+	background-color: #FF7B47;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+
 
 
 /*----FOOTER------------------------------------------------------------------------*/

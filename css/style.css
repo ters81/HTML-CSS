@@ -197,6 +197,8 @@ body{
 
 .page__getintouch {}
 
+.page__contact {}
+
 
 
 
@@ -1080,6 +1082,78 @@ body{
 	cursor: pointer;
 }
 
+
+
+/*-------CONTACT US-------------------------------------------------------------------*/
+
+
+.contact {
+	background-color: #FFFFFF;
+	padding: 42px 0;
+}
+
+.contact__container {}
+
+.contact__body {}
+
+.contact__content {
+	padding: 0 0 20px 0;
+}
+
+@media (min-width: 770px){
+	.contact__body {
+		display: flex;
+		justify-content: space-between;	
+		align-items: center;	
+	}
+	.contact__content {
+		padding: 0 20px 0 0;
+	}
+}
+
+.contact__title {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 133%;
+	letter-spacing: 0.1px;
+	color: #252B42;
+}
+
+.contact__title:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.contact__text {	
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 143%;
+	letter-spacing: 0.2px;
+	color: #737373;
+}
+
+.contact__button {
+	background-color: #FF7B47;
+	border-radius: 5px;
+	min-height: 58px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	display: flex;
+
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 200%;	
+	letter-spacing: 0.2px;
+	color: #FFFFFF;
+	padding: 5px 40px;
+	transition: background-color 0.3s ease 0s;
+}
+
+.contact__button:hover{
+	background-color: #c55123;
+	
+}
 
 
 
